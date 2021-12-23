@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Nadine's blog
+title: r0si's blog
 subtitle: ''
 description: ''
 keywords:
-author: Nadine
+author: r0si
 language: zh
 timezone: ''
 
@@ -104,6 +104,6 @@ theme_config:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:Sec-Nadine/sec-nadine.github.io.git
+  repository: git@github.com:r0si/r0si.github.io.git
   branch: main
 
