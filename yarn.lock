@@ -579,6 +579,11 @@
   "resolved" "https://registry.nlark.com/hexo-theme-landscape/download/hexo-theme-landscape-0.0.3.tgz"
   "version" "0.0.3"
 
+"hexo-theme-next@^8.8.2":
+  "integrity" "sha512-eXpou/NG1ZdYTVRmntpsh1YpQ/P0mlyUb3mas3VQ4qoW7Ky3bGE5+/zB5A53D6l6PBe/UUco4kK9NlNWqRj14A=="
+  "resolved" "https://registry.npmmirror.com/hexo-theme-next/download/hexo-theme-next-8.8.2.tgz"
+  "version" "8.8.2"
+
 "hexo-util@^2.0.0", "hexo-util@^2.1.0", "hexo-util@^2.4.0":
   "integrity" "sha1-3lY1NBEWuiVjp4mg6861WodSIa0="
   "resolved" "https://registry.nlark.com/hexo-util/download/hexo-util-2.5.0.tgz"
