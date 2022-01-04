@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="水坑攻击水坑攻击是APT攻击的一种，攻击者分析攻击目标的上网活动规律，寻找攻击目标经常访问的网站的弱点，先将此网站攻破并植入攻击代码并等待被攻击者访问该站点。 鱼叉攻击针对某个特定的人进行攻击，会使用一些钓鱼邮件。">
+<meta name="description" content="名词解释 威胁情报平台(TIP) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件发送给特定的攻击目标，诱使目标打开附件，这种方式就是鱼叉邮件。 网络杀伤链模型(Cyber Kill Chain)   侦查(攻击者选择目标、进行研究、搜集目标弱点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="APT攻击手法">
 <meta property="og:url" content="http://example.com/2021/12/31/APT%E6%94%BB%E5%87%BB%E6%89%8B%E6%B3%95/index.html">
 <meta property="og:site_name" content="r0si&#39;s blog">
-<meta property="og:description" content="水坑攻击水坑攻击是APT攻击的一种，攻击者分析攻击目标的上网活动规律，寻找攻击目标经常访问的网站的弱点，先将此网站攻破并植入攻击代码并等待被攻击者访问该站点。 鱼叉攻击针对某个特定的人进行攻击，会使用一些钓鱼邮件。">
+<meta property="og:description" content="名词解释 威胁情报平台(TIP) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件发送给特定的攻击目标，诱使目标打开附件，这种方式就是鱼叉邮件。 网络杀伤链模型(Cyber Kill Chain)   侦查(攻击者选择目标、进行研究、搜集目标弱点">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-12-31T07:09:06.000Z">
-<meta property="article:modified_time" content="2021-12-31T07:09:43.550Z">
+<meta property="article:modified_time" content="2022-01-04T06:25:54.857Z">
 <meta property="article:author" content="r0si">
 <meta name="twitter:card" content="summary">
 
@@ -94,7 +94,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -107,6 +107,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"><span class="nav-number">1.</span> <span class="nav-text">名词解释</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -182,9 +183,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-12-31 15:09:06 / Modified: 15:09:43" itemprop="dateCreated datePublished" datetime="2021-12-31T15:09:06+08:00">2021-12-31</time>
+      <time title="Created: 2021-12-31 15:09:06" itemprop="dateCreated datePublished" datetime="2021-12-31T15:09:06+08:00">2021-12-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-01-04 14:25:54" itemprop="dateModified" datetime="2022-01-04T14:25:54+08:00">2022-01-04</time>
     </span>
 
   
@@ -197,10 +204,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <ul>
-<li>水坑攻击<br>水坑攻击是APT攻击的一种，攻击者分析攻击目标的上网活动规律，寻找攻击目标经常访问的网站的弱点，先将此网站攻破并植入攻击代码并等待被攻击者访问该站点。</li>
-<li>鱼叉攻击<br>针对某个特定的人进行攻击，会使用一些钓鱼邮件。</li>
+        <h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul>
+<li>威胁情报平台(TIP)</li>
+<li>TTP(战术、技术和过程)</li>
+<li>水坑攻击<br>攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击</li>
+<li>鱼叉攻击<br>最常见的方式是通过电子邮件发送给特定的攻击目标，诱使目标打开附件，这种方式就是鱼叉邮件。</li>
+<li>网络杀伤链模型(Cyber Kill Chain)</li>
 </ul>
+<ol>
+<li>侦查(攻击者选择目标、进行研究、搜集目标弱点)</li>
+<li>武器化(攻击者创建针对一个或多个漏洞定制的远程访问恶意程序武器，比如病毒或蠕虫)</li>
+<li>散布</li>
+<li>恶用</li>
+<li>设置</li>
+<li>命令和控制</li>
+<li>目标达成</li>
+</ol>
 
     </div>
 
@@ -219,6 +238,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/12/31/%E9%9D%A2%E8%AF%95%E5%BA%94%E8%AF%A5%E9%97%AE%E9%9D%A2%E8%AF%95%E5%AE%98%E7%9A%84%E9%97%AE%E9%A2%98/" rel="next" title="面试应该问面试官的问题">
+                  面试应该问面试官的问题 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -239,7 +261,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
