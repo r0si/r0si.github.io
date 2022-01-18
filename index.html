@@ -115,7 +115,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -145,6 +145,203 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/09/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="r0si">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="r0si's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/09/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-title-link" itemprop="url">渗透测试面试题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-09 10:05:02" itemprop="dateCreated datePublished" datetime="2022-01-09T10:05:02+08:00">2022-01-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-01-12 18:45:26" itemprop="dateModified" datetime="2022-01-12T18:45:26+08:00">2022-01-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="渗透测试流程"><a href="#渗透测试流程" class="headerlink" title="渗透测试流程"></a>渗透测试流程</h2><h3 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h3><ol>
+<li>服务器相关信息（真实IP，系统类型，版本，开放端口，WAF等）</li>
+<li>网站指纹识别（包括cms，cdn，证书等），dns记录</li>
+<li>whois信息，姓名，备案，</li>
+</ol>
+<h3 id="漏洞扫描"><a href="#漏洞扫描" class="headerlink" title="漏洞扫描"></a>漏洞扫描</h3><h2 id="XSS注入"><a href="#XSS注入" class="headerlink" title="XSS注入"></a>XSS注入</h2><h3 id="XSS的分类"><a href="#XSS的分类" class="headerlink" title="XSS的分类"></a>XSS的分类</h3><ul>
+<li>反射型XSS</li>
+<li>存储型XSS</li>
+<li>DOM型XSS<h2 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h2><h3 id="注入点类型"><a href="#注入点类型" class="headerlink" title="注入点类型"></a>注入点类型</h3></li>
+<li>数字型</li>
+<li>字符型</li>
+<li>搜索型<h3 id="SQL执行效果"><a href="#SQL执行效果" class="headerlink" title="SQL执行效果"></a>SQL执行效果</h3></li>
+<li>报错注入</li>
+<li>布尔盲注</li>
+<li>联合查询注入</li>
+<li>时间</li>
+<li>内联</li>
+<li>堆叠注入</li>
+<li>宽字节注入<h3 id="SQL注入提交方式"><a href="#SQL注入提交方式" class="headerlink" title="SQL注入提交方式"></a>SQL注入提交方式</h3></li>
+<li>GET</li>
+<li>POST</li>
+<li>Cookies</li>
+<li>HTTP头<ul>
+<li>UserAgent</li>
+<li>Referer</li>
+<li>Cookie</li>
+<li>IP</li>
+</ul>
+</li>
+</ul>
+<h3 id="文件上传漏洞"><a href="#文件上传漏洞" class="headerlink" title="文件上传漏洞"></a>文件上传漏洞</h3><ul>
+<li>漏洞原理</li>
+</ul>
+<p>由于程序员在对用户文件上传部分的控制不足或者处理缺陷，而导致用户可以越过其本身权限向服务器上传可执行的动态脚本文件</p>
+<ul>
+<li>上传绕过方式</li>
+</ul>
+<ol>
+<li>前端js验证：禁用js/burp改包</li>
+<li>大小写绕过</li>
+<li>双重后缀名绕过</li>
+<li>过滤绕过pphphp-&gt;php</li>
+</ol>
+<ul>
+<li>防护</li>
+</ul>
+<ol>
+<li>文件上传目录设置为不可执行</li>
+<li>使用白名单判断文件上传类型</li>
+<li>用随机数改写文件名和路径</li>
+</ol>
+<h3 id="Java反序列化漏洞原理"><a href="#Java反序列化漏洞原理" class="headerlink" title="Java反序列化漏洞原理"></a>Java反序列化漏洞原理</h3><ul>
+<li>如果Java引用对用户输入，即不可信数据做了反序列化处理，那么攻击者可以通过构造恶意输入，让反序列化产生非预期的对象，非预期的对象在产生过程中就有可能带来任意代码执行。</li>
+<li>序列化就是将对象转换为流，利于存储和传输的格式，<code>java.io.ObjectOutputStream</code>类中的<code>writeObject()</code></li>
+<li>反序列化就是将流转换为对象，<code>java.io.ObjectInputStream</code>类中的<code>readObject()</code></li>
+</ul>
+<h4 id="代码执行的函数"><a href="#代码执行的函数" class="headerlink" title="代码执行的函数"></a>代码执行的函数</h4><p>eval(),preg_replace+/e,assert(),call_user_func,call_user_func_array,create_function()</p>
+<h4 id="文件读取函数"><a href="#文件读取函数" class="headerlink" title="文件读取函数"></a>文件读取函数</h4><p>file_get_contents(),highlight_file(),fopen(),read_file(),fread(),fgetss(),fgets(),parse_ini_file(),show_source(),file()</p>
+<h4 id="命令执行函数"><a href="#命令执行函数" class="headerlink" title="命令执行函数"></a>命令执行函数</h4><p>system(),exec(),shell_exec(),passthru(),pcntl_exec(),popen(),proc_open()</p>
+<h2 id="野文"><a href="#野文" class="headerlink" title="野文"></a>野文</h2><ul>
+<li>php的%00截断的原理是什么？<br>因为在C语言中字符串的结束标识符%00是结束符号，而PHP就是C写的，所以继承了C的特性，所以判断微%00是结束符号不会继续往后执行</li>
+<li>绕过waf方法</li>
+</ul>
+<ol>
+<li>大小写转换法</li>
+<li>干扰字符/<em>!</em>/</li>
+<li>编码 base64 unicode hex url ascii</li>
+<li>复参数</li>
+</ol>
+<ul>
+<li>如何向服务器写入webshell</li>
+</ul>
+<ol>
+<li>各种上传漏洞</li>
+<li>mysql具有写入权限，用sql语句写入shell</li>
+<li>http put方法</li>
+</ol>
+<ul>
+<li>列举您所知道的所有开源组件高危漏洞</li>
+</ul>
+<ol>
+<li>Tomcat</li>
+<li>Nginx</li>
+<li>Apache</li>
+<li>Hadoop</li>
+<li>Docker</li>
+<li>Jenkins</li>
+<li>Zenoss</li>
+<li>Jboss</li>
+<li>MongoDB</li>
+<li>Redis</li>
+<li>GlassFish</li>
+</ol>
+<ul>
+<li>隐藏攻击痕迹的方法</li>
+</ul>
+<ol>
+<li>跳板</li>
+<li>代理服务器</li>
+<li>Tor</li>
+<li>日志</li>
+<li>清除历史记录</li>
+<li>粉碎文件</li>
+</ol>
+<ul>
+<li>Mysql的网站注入，5.0以上和5.0以下有什么区别？</li>
+</ul>
+<p>5.0以下没有information_schema这个系统表，无法列表名等，只能暴力跑表名;5.0以下是多用户单操作，5.0以上是多用户多操作。</p>
+<ul>
+<li>渗透测试流程</li>
+</ul>
+<ol>
+<li>信息收集</li>
+<li>漏洞扫描</li>
+<li>漏洞利用</li>
+<li>权限提升</li>
+<li>日志清理</li>
+<li>撰写报告</li>
+</ol>
+<ul>
+<li>Redis未授权<br>Redis默认情况下，会绑定在0.0.0.0：6379,这样将会在Redis服务暴露到公网上，如果在没有开启认证的情况下，可以导致任意用户在可以访问目标服务器的情况下未授权访问Redis以及读取Redis的数据。攻击者在未授权访问Redis的情况夏可以利用Redis的相关方法，可以成功在Redis服务器上写入公钥，进而可以使用对应私钥直接登录目标服务器</li>
+<li>shiro反序列化<br>ApacheShiro框架提供了记住我的功能（RememberMe），用户登陆成功后会生成经过加密并编码的cookie，在服务端接收cookie值后，Base64解码–&gt;AES解密–&gt;反序列化。攻击者只要找到AES加密的密钥，就可以构造一个恶意对象，对其进行序列化–&gt;AES加密–&gt;Base64编码，然后将其作为cookie的rememberMe字段发送，Shiro将rememberMe进行解密并且反序列化，最终造成反序列化漏洞。</li>
+<li>CS的上线的几种方式<br>http、https、dns、smb</li>
+<li>几种绕过waf编码的方式<br>url编码、unicode编码、html编码</li>
+<li>命令执行函数<br>system(),exec(),shell_exec(),passthru(),pcntl_exec(),popen(),proc_open()<h2 id="内网渗透"><a href="#内网渗透" class="headerlink" title="内网渗透"></a>内网渗透</h2></li>
+<li>内网横向移动方法<br>at,schtasks,psexec,smbexec,wmic,vmiexec,PTH,PTT,PTK,winrs,winrm,RDP,SPN</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -326,7 +523,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-01-05 16:55:05" itemprop="dateModified" datetime="2022-01-05T16:55:05+08:00">2022-01-05</time>
+      <time title="Modified: 2022-01-13 14:27:42" itemprop="dateModified" datetime="2022-01-13T14:27:42+08:00">2022-01-13</time>
     </span>
 
   
@@ -344,6 +541,7 @@
 </ul>
 <ul>
 <li>0day攻击</li>
+<li>近源渗透</li>
 <li>社会工程学</li>
 </ul>
 <ul>
@@ -353,11 +551,18 @@
 <li>水坑攻击<br>攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击</li>
 <li>鱼叉攻击<br>最常见的方式是通过电子邮件发送给特定的攻击目标，诱使目标打开附件，这种方式就是鱼叉邮件。</li>
 <li>路过式下载<br>在用户不知道的情况夏下载间谍软件、计算机病毒或者任何恶意软件。</li>
+<li>HID攻击</li>
+<li>DNS劫持</li>
+<li>宏代码</li>
+<li>特种木马</li>
 <li>现场投递</li>
 <li>蛙跳攻击</li>
 <li>摆渡攻击</li>
+<li>恶意无线网络</li>
+<li>P2P种子陷阱</li>
 <li>即时通讯工具</li>
 <li>社交网络</li>
+<li>内网渗透</li>
 <li>网络杀伤链模型(Cyber Kill Chain)(发现-定位-跟踪-瞄准-入侵-完成)</li>
 </ul>
 <ol>
@@ -444,7 +649,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-01-05 17:52:22" itemprop="dateModified" datetime="2022-01-05T17:52:22+08:00">2022-01-05</time>
+      <time title="Modified: 2022-01-11 20:04:47" itemprop="dateModified" datetime="2022-01-11T20:04:47+08:00">2022-01-11</time>
     </span>
 
   
@@ -457,7 +662,57 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="安全面试大合集"><a href="#安全面试大合集" class="headerlink" title="安全面试大合集"></a>安全面试大合集</h1><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="OWASP-TOP-10"><a href="#OWASP-TOP-10" class="headerlink" title="OWASP TOP 10"></a>OWASP TOP 10</h2><ul>
+          <h1 id="安全面试大合集"><a href="#安全面试大合集" class="headerlink" title="安全面试大合集"></a>安全面试大合集</h1><h2 id="Linux防火墙"><a href="#Linux防火墙" class="headerlink" title="Linux防火墙"></a>Linux防火墙</h2><p>Linux系统内核中的一个功能强大的框架Netfilter，为其他内核模块提供数据包过滤、网络地址转换（NAT）和负载均衡的功能。我们常用的iptables和firewalld服务都依赖于Netfilter来过滤数据包，不同之处在于iptables基于过滤规则链，firewalld基于区域。</p>
+<p>firewalld和iptables的区别：</p>
+<ul>
+<li><p>iptables基于规则链，firewalld基于zone区域的方式</p>
+</li>
+<li><p>firewalld提供了图形化方式</p>
+</li>
+<li><p>firewalld支持动态更新规则</p>
+</li>
+<li><p>iptables无守护进程，不能算作真正的服务，firewalld存在守护进程</p>
+</li>
+<li><p>Centos7.0以上(firewalld)</p>
+<ol>
+<li>查看版本 <code>firewall-cmd --version</code></li>
+<li>查看帮助 <code>firewall-cmd --help</code></li>
+<li>显示状态 <code>firewall-cmd --state</code></li>
+<li>查看所有打开的端口 <code>firewall-cmd --zone=public --list-ports</code></li>
+<li>更新防火墙规则 <code>firewall-cmd --reload</code></li>
+<li>查看区域信息 <code>firewall-cmd --get-active-zones</code></li>
+<li>查看指定接口所属区域<code>firewall-cmd --get-zone-of-interface=eth0</code></li>
+<li>拒绝所有包<code>firewall-cmd --panic-on</code></li>
+<li>取消拒绝状态<code>firewall-cmd --panic-off</code></li>
+<li>查看是否拒绝<code>firewall-cmd --query-panic</code></li>
+</ol>
+</li>
+<li><p>Centos7.0以下(iptables)</p>
+<h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3></li>
+</ul>
+<ol>
+<li>物理层(HUB,网线,中继器)</li>
+<li>数据链路层(SDLC,HDLC,PPP,ARQ)</li>
+<li>网络层(IP,ICMP,IGMP,ARP,RIP,BGP,OSPF)</li>
+<li>传输层(TCP,UDP)</li>
+<li>会话层</li>
+<li>表示层</li>
+<li>应用层(DNS,HTTP,FTP,SSH)<h3 id="TCP-IP四层模型"><a href="#TCP-IP四层模型" class="headerlink" title="TCP/IP四层模型"></a>TCP/IP四层模型</h3></li>
+<li>网络接口层</li>
+<li>网际层IP</li>
+<li>运输层</li>
+<li>应用层<h3 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手"></a>TCP三次握手</h3></li>
+</ol>
+<ul>
+<li>第一次握手：客户端发送SYN报文，并进入SYN_SENT状态，等待服务器的确认;</li>
+<li>第二次握手：服务器收到SYN报文，需要给客户端发送ACK确认报文，同时服务器也要向客户端发送一个SYN报文，所以也就是向客户端发送SYN+ACK报文，此时服务器进入SYN_RCVD状态;</li>
+<li>第三次握手：客户端收到SYN+ACK报文，向服务器发送确认包，客户端进入ESTABLISHED状态。待服务器收到客户端发送的ACK包也会进入ESTABLISHED状态，完成三次握手。<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2></li>
+</ul>
+<ol>
+<li>进程和线程的区别?<br>调度：进程是资源管理的基本单位，线程是程序执行的基本单位。<br>切换：线程上下文切换比进程上下文切换要快得多。</li>
+<li>什么是死锁？死锁产生的条件？<br>在两个或多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它或它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一租进程产生了死锁。通俗的讲就是两个或多个进程无限期的阻塞、相互等待的一种状态。</li>
+</ol>
+<h2 id="OWASP-TOP-10"><a href="#OWASP-TOP-10" class="headerlink" title="OWASP TOP 10"></a>OWASP TOP 10</h2><ul>
 <li>失效的访问控制</li>
 <li>加密失败</li>
 <li>注入</li>
@@ -1011,74 +1266,9 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/23/%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E8%AF%95%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="r0si">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="r0si's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/23/%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-title-link" itemprop="url">运维工程师面试题</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-23 11:22:23" itemprop="dateCreated datePublished" datetime="2021-12-23T11:22:23+08:00">2021-12-23</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><ul>
-<li>查询file中以abc结尾的行<br><code>grep abc$ file</code></li>
-<li>编写一个shell脚本将/usr/local/test目录下大于100k的文件转移到/tmp目录<br><code>find /usr/local/test -type f -size +100k -exec mv &#123;&#125; /tmp \</code></li>
-<li>开启Linux服务器路由转发功能?<br><code>echo &quot;1&quot; &gt; /proc/sys/net/ipv4/ip_forward</code></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 </div>
   </main>

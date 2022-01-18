@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="名词解释 APT攻击有组织的，有明确目的性，长期综合运用多种攻击手段对特定目标进行渗透的活动。   0day攻击 社会工程学   威胁情报平台(TIP) 威胁检测平台(TDP&#x2F;TDPS) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件发送给特定">
+<meta name="description" content="名词解释 APT攻击有组织的，有明确目的性，长期综合运用多种攻击手段对特定目标进行渗透的活动。   0day攻击 近源渗透 社会工程学   威胁情报平台(TIP) 威胁检测平台(TDP&#x2F;TDPS) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="APT攻击手法">
 <meta property="og:url" content="http://example.com/2021/12/31/APT%E6%94%BB%E5%87%BB%E6%89%8B%E6%B3%95/index.html">
 <meta property="og:site_name" content="r0si&#39;s blog">
-<meta property="og:description" content="名词解释 APT攻击有组织的，有明确目的性，长期综合运用多种攻击手段对特定目标进行渗透的活动。   0day攻击 社会工程学   威胁情报平台(TIP) 威胁检测平台(TDP&#x2F;TDPS) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件发送给特定">
+<meta property="og:description" content="名词解释 APT攻击有组织的，有明确目的性，长期综合运用多种攻击手段对特定目标进行渗透的活动。   0day攻击 近源渗透 社会工程学   威胁情报平台(TIP) 威胁检测平台(TDP&#x2F;TDPS) TTP(战术、技术和过程) 水坑攻击攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击 鱼叉攻击最常见的方式是通过电子邮件">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-12-31T07:09:06.000Z">
-<meta property="article:modified_time" content="2022-01-05T08:55:05.900Z">
+<meta property="article:modified_time" content="2022-01-13T06:27:42.710Z">
 <meta property="article:author" content="r0si">
 <meta name="twitter:card" content="summary">
 
@@ -120,7 +120,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -191,7 +191,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-01-05 16:55:05" itemprop="dateModified" datetime="2022-01-05T16:55:05+08:00">2022-01-05</time>
+      <time title="Modified: 2022-01-13 14:27:42" itemprop="dateModified" datetime="2022-01-13T14:27:42+08:00">2022-01-13</time>
     </span>
 
   
@@ -209,6 +209,7 @@
 </ul>
 <ul>
 <li>0day攻击</li>
+<li>近源渗透</li>
 <li>社会工程学</li>
 </ul>
 <ul>
@@ -218,11 +219,18 @@
 <li>水坑攻击<br>攻击者通过分析攻击目标的网络活动规律，寻找攻击目标经常访问的网站的弱点，先攻下该站点并植入攻击程序，在攻击目标访问该站点时实施攻击</li>
 <li>鱼叉攻击<br>最常见的方式是通过电子邮件发送给特定的攻击目标，诱使目标打开附件，这种方式就是鱼叉邮件。</li>
 <li>路过式下载<br>在用户不知道的情况夏下载间谍软件、计算机病毒或者任何恶意软件。</li>
+<li>HID攻击</li>
+<li>DNS劫持</li>
+<li>宏代码</li>
+<li>特种木马</li>
 <li>现场投递</li>
 <li>蛙跳攻击</li>
 <li>摆渡攻击</li>
+<li>恶意无线网络</li>
+<li>P2P种子陷阱</li>
 <li>即时通讯工具</li>
 <li>社交网络</li>
+<li>内网渗透</li>
 <li>网络杀伤链模型(Cyber Kill Chain)(发现-定位-跟踪-瞄准-入侵-完成)</li>
 </ul>
 <ol>
